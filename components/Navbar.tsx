@@ -40,7 +40,7 @@ const Navbar = ({ activeSectionId, pages }: NavbarProps) => {
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown #FF3B30*/}
       {menuOpen && (
         <div className="absolute top-full -left-[70%] w-fit bg-[#18181B] rounded-lg shadow-md mt-2 nav-hide">
           <ul className="flex flex-col items-center gap-2 py-4">
@@ -49,7 +49,6 @@ const Navbar = ({ activeSectionId, pages }: NavbarProps) => {
                 <a
                   href={`#${page.id}`}
                   onClick={() => setMenuOpen(false)}
-{/*                   #FF3B30 */}
                   className={`block w-full text-center text-sm font-semibold transition-colors px-4 py-2 rounded-md hover:bg-[#fc2f23] hover:text-white ${
                     activeSectionId === page.id
                       ? "bg-[#fc2f23] text-white border border-[#fc2f23]"
